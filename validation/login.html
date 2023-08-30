@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <style>
+      body {
+        background-image: url(backgroun3.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        width: 500px; /* Set the width of the container */
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      form {
+        text-align: left;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 70%; /* Set the input boxes to take 100% of the available width */
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      button {
+        background-color: blue;
+        color: white;
+        width: 20%; /* Set the button to take 100% of the available width */
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      /* Flexbox styling to center input and button */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <h1>Login</h1>
+        <form action="../server_validation/login.php" method="POST">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+          <button type="submit">Login</button><br /><br />
+        </form>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+      </center>
+    </div>
+  </body>
+</html>

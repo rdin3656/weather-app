@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(2, 35, 125);
+}
+
+.card{
+    width: 90%;
+    max-width: 490px;
+    background: linear-gradient(rgb(236, 101, 39), rgb(53, 135, 197));
+    padding: 40px 35px;
+    text-align: center;
+    margin: 50px auto 0;
+    border-radius: 20px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #7beedc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #51b6a6;
+    color: black;
+    border-radius: 30px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    
+}
+
+.search button img{
+    width: 16px;
+}
+
+.icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: center;
+    padding-right: 80px;
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+    padding: 10px;
+  }
+
+  .header button {
+    width: 150px; /* Set a fixed width for the buttons */
+    margin: 0 10px; /* Add some margin between the buttons */
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  }
+
+  .header button:hover {
+    background-color: #176b6e;
+    box-shadow: 0 0 50px rgba(213, 213, 18, 0.981);
+  }
